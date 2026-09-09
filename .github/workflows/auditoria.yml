@@ -1,0 +1,35 @@
+name: Auditoria de Estandares W3C y Seguridad
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  auditoria:
+    name: Pruebas de Codigo
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar el codigo del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Pruebas de Estandares HTML (W3C) con HTMLHint
+        run: |
+          npx htmlhint "**/*.html"
+        continue-on-error: true # Permite que el proceso siga aunque haya errores para ver todo el reporte
+
+      - name: Auditoria de Codigo Secreto (Gitleaks)
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
+      - name: Reporte de finalizacion
+        run: echo "Las pruebas de heurísticas y estándares se han completado. Revisa los logs arriba para ver los detalles."
