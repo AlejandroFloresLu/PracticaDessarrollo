@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Perfil visual de Jude Bellingham: trayectoria, impacto y el nacimiento de un nuevo ídolo en el Real Madrid.">
+  <title>Bellingham | El nuevo rey del Bernabéu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bellingham.css">
+  <script src="script.js" defer></script>
+  <script src="bellingham.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Bellingham, volver al inicio">
+      <span class="brand-mark">JB<span>5</span></span>
+      <span class="brand-label">El nuevo<br>rey</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
+      <span class="nav-toggle-icon" aria-hidden="true"></span>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <a href="#trayectoria">Trayectoria</a>
+      <a href="#numeros">Números</a>
+      <a href="#galeria">Galería</a>
+      <a href="index.html">CR7</a>
+      <a href="messi.html">Messi</a>
+      <a href="observabilidad.html">Observabilidad</a>
+    </nav>
+    <a class="header-cta" href="#galeria">Ver momentos <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-visual">
+        <div class="hero-image-frame">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/2022_FIFA_World_Cup_-_Bellingham_%28cropped%29.jpg" alt="Jude Bellingham vistiendo la camiseta del Real Madrid en 2023">
+          <span class="image-tag">01 / 03</span>
+        </div>
+        <div class="hero-stamp">Belligol<br><span>madridismo</span></div>
+        <p class="vertical-label">FÚTBOL / ELEGANCIA / IMPACTO</p>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Perfil de un fenómeno</p>
+        <h1 id="hero-title">Jude<br><span class="accent">Bellingham</span></h1>
+        <p class="hero-intro">Un mediocampista total. Su llegada al Real Madrid no solo rompió récords, sino que redefinió lo que significa llevar el número 5 en la espalda.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#trayectoria">Explorar la carrera <span aria-hidden="true">↓</span></a>
+          <span class="hero-note">Stourbridge · Inglaterra<br><strong>2003 — presente</strong></span>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true"><span></span> Desplázate para descubrir</div>
+    </section>
+
+    <section class="manifesto" aria-label="Cita destacada">
+      <div class="section-kicker">01 <span></span> La actitud</div>
+      <blockquote>“Siempre quise jugar para un club donde la presión fuera máxima. Eso es el Real Madrid.”</blockquote>
+      <p>— Jude Bellingham</p>
+    </section>
+
+    <section class="journey section-shell" id="trayectoria" aria-labelledby="journey-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> Una línea de tiempo</p>
+          <h2 id="journey-title">De Birmingham<br>al <span class="accent">Bernabéu.</span></h2>
+        </div>
+        <p class="section-description">Una ascensión meteórica. Desde retirar su número en su club de origen con 17 años hasta conquistar Europa.</p>
+      </div>
+      <p class="bellingham-timeline-hint">Usa las flechas del teclado, Inicio o Fin para moverte entre etapas.</p>
+      <div class="bellingham-timeline" role="tablist" aria-label="Etapas de la carrera">
+        <button class="bellingham-timeline-item active" id="tab-bellingham-2019" type="button" role="tab" aria-selected="true" aria-controls="bellingham-milestone-panel" tabindex="0" data-year="2019">
+          <span class="bellingham-timeline-year">2019</span>
+          <span class="bellingham-timeline-dot"></span>
+          <span class="bellingham-timeline-club">Birmingham<br>City</span>
+        </button>
+        <button class="bellingham-timeline-item" id="tab-bellingham-2020" type="button" role="tab" aria-selected="false" aria-controls="bellingham-milestone-panel" tabindex="-1" data-year="2020">
+          <span class="bellingham-timeline-year">2020</span>
+          <span class="bellingham-timeline-dot"></span>
+          <span class="bellingham-timeline-club">Borussia<br>Dortmund</span>
+        </button>
+        <button class="bellingham-timeline-item" id="tab-bellingham-2022" type="button" role="tab" aria-selected="false" aria-controls="bellingham-milestone-panel" tabindex="-1" data-year="2022">
+          <span class="bellingham-timeline-year">2022</span>
+          <span class="bellingham-timeline-dot"></span>
+          <span class="bellingham-timeline-club">Selección<br>Inglesa</span>
+        </button>
+        <button class="bellingham-timeline-item" id="tab-bellingham-2023" type="button" role="tab" aria-selected="false" aria-controls="bellingham-milestone-panel" tabindex="-1" data-year="2023">
+          <span class="bellingham-timeline-year">2023</span>
+          <span class="bellingham-timeline-dot"></span>
+          <span class="bellingham-timeline-club">Real<br>Madrid</span>
+        </button>
+      </div>
+      <div class="bellingham-journey-detail" id="bellingham-milestone-panel" role="tabpanel" aria-labelledby="tab-bellingham-2019" tabindex="0">
+        <span class="bellingham-detail-number">01</span>
+        <div>
+          <p class="bellingham-detail-label">El origen</p>
+          <h3 id="bellingham-milestone-title">El niño de Birmingham</h3>
+          <p id="bellingham-milestone-copy">Debutó a los 16 años y 38 días, siendo el más joven de la historia del club. Su impacto fue tal que el Birmingham City decidió retirar su camiseta número 22 al ser traspasado.</p>
+        </div>
+        <span class="bellingham-detail-arrow" aria-hidden="true">↗</span>
+      </div>
+    </section>
+
+    <section class="numbers" id="numeros" aria-labelledby="numbers-title">
+      <div class="section-shell">
+        <div class="section-kicker light">02 <span></span> El impacto en cifras</div>
+        <div class="numbers-heading">
+          <h2 id="numbers-title">Talento en<br><span class="accent">estadísticas.</span></h2>
+          <p>Un centrocampista con alma de delantero. Bellingham no solo organiza, también define los momentos clave.</p>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card"><strong>1</strong><span>Golden<br>Boy</span><small>Mejor joven<br>del mundo 2023</small></article>
+          <article class="stat-card"><strong>1</strong><span>Trofeo<br>Kopa</span><small>Otorgado por<br>France Football</small></article>
+          <article class="stat-card"><strong>1</strong><span>Champions<br>League</span><small>La Decimoquinta<br>con el Madrid</small></article>
+          <article class="stat-card"><strong>23</strong><span>Goles<br>en debut</span><small>Primera temporada<br>en España</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section-shell" id="galeria" aria-labelledby="gallery-title">
+      <div class="gallery-heading">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> Archivo visual</p>
+          <h2 id="gallery-title">Momentos que<br><span class="accent">permanecen.</span></h2>
+        </div>
+        <p>Una carrera que apenas comienza pero que ya deja postales imborrables.</p>
+      </div>
+      <div class="bellingham-gallery-grid">
+        <figure class="bellingham-gallery-card bellingham-gallery-card-large">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/2025_04_26_Final_de_la_Copa_del_Rey_-_54482387776_%28Vin%C3%ADcius_J%C3%BAnior%2C_Jude_Bellingham_e_Rodrygo_Go%C3%A9s%29_%28cropped%29.jpg" alt="Jude Bellingham con los brazos abiertos celebrando un gol en el Santiago Bernabéu" loading="lazy">
+          <figcaption><span>01</span><strong>La icónica celebración</strong><small>2023 · Real Madrid</small></figcaption>
+        </figure>
+        <figure class="bellingham-gallery-card bellingham-gallery-card-wide">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/25th_Laureus_World_Sports_Awards_-_240422_205212_%28cropped%29.jpg" alt="Jude Bellingham jugando con la Selección de Inglaterra en 2022" loading="lazy">
+          <figcaption><span>02</span><strong>El orgullo inglés</strong><small>2022 · Selección Inglesa</small></figcaption>
+        </figure>
+      </div>
+      <p class="credits">Fotografías: Wikimedia Commons · Contenido informativo y no oficial</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="brand-mark">JB<span>5</span></span>
+    <p>Una elegancia. Una llegada.<br><strong>Un nuevo ídolo.</strong></p>
+    <div class="bellingham-footer-links">
+      <a href="index.html">CR7</a>
+      <a href="messi.html">Messi</a>
+      <a href="observabilidad.html">Dashboard</a>
+      <a href="#inicio" class="back-top">Volver arriba ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

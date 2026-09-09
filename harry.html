@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Perfil visual de Harry Potter: historia, impacto y legado del Elegido en el Mundo Mágico.">
+  <title>Harry Potter | El Niño Que Sobrevivió</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="harry.css">
+  <script src="script.js" defer></script>
+  <script src="harry.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Harry Potter, volver al inicio">
+      <span class="brand-mark">HP<span>⚡</span></span>
+      <span class="brand-label">The boy who<br>lived</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
+      <span class="nav-toggle-icon" aria-hidden="true"></span>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <a href="#trayectoria">Historia</a>
+      <a href="#numeros">Legado</a>
+      <a href="#galeria">Galería</a>
+      <a href="index.html">CR7</a>
+      <a href="messi.html">Messi</a>
+      <a href="bellingham.html">Bellingham</a>
+      <a href="observabilidad.html">Observabilidad</a>
+    </nav>
+    <a class="header-cta" href="#galeria">Ver momentos <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-visual">
+        <div class="hero-image-frame">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Daniel_Radcliffe.jpg" alt="Retrato de Daniel Radcliffe, actor de Harry Potter">
+          <span class="image-tag">01 / 03</span>
+        </div>
+        <div class="hero-stamp">Magia<br><span>pura</span></div>
+        <p class="vertical-label">VALOR / AMISTAD / SACRIFICIO</p>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> El Elegido</p>
+        <h1 id="hero-title">Harry<br><span class="accent">Potter</span></h1>
+        <p class="hero-intro">Una historia forjada por el destino, la valentía y el amor. El mago que demostró que nuestras elecciones nos definen mucho más que nuestras habilidades.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#trayectoria">Explorar su historia <span aria-hidden="true">↓</span></a>
+          <span class="hero-note">Godric's Hollow · Inglaterra<br><strong>1980 — presente</strong></span>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true"><span></span> Desplázate para descubrir</div>
+    </section>
+
+    <section class="manifesto" aria-label="Cita destacada">
+      <div class="section-kicker">01 <span></span> La verdad</div>
+      <blockquote>“Son nuestras elecciones, Harry, las que muestran lo que somos, mucho más que nuestras habilidades.”</blockquote>
+      <p>— Albus Dumbledore</p>
+    </section>
+
+    <section class="journey section-shell" id="trayectoria" aria-labelledby="journey-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> Una línea de tiempo</p>
+          <h2 id="journey-title">De la alacena<br>a <span class="accent">Hogwarts.</span></h2>
+        </div>
+        <p class="section-description">Una vida marcada por profecías y pruebas inimaginables. Cada año en Hogwarts fue un paso hacia su destino final.</p>
+      </div>
+      <p class="harry-timeline-hint">Usa las flechas del teclado, Inicio o Fin para moverte entre etapas.</p>
+      <div class="harry-timeline" role="tablist" aria-label="Etapas de la historia">
+        <button class="harry-timeline-item active" id="tab-harry-1991" type="button" role="tab" aria-selected="true" aria-controls="harry-milestone-panel" tabindex="0" data-year="1991">
+          <span class="harry-timeline-year">1991</span>
+          <span class="harry-timeline-dot"></span>
+          <span class="harry-timeline-club">La Piedra<br>Filosofal</span>
+        </button>
+        <button class="harry-timeline-item" id="tab-harry-1992" type="button" role="tab" aria-selected="false" aria-controls="harry-milestone-panel" tabindex="-1" data-year="1992">
+          <span class="harry-timeline-year">1992</span>
+          <span class="harry-timeline-dot"></span>
+          <span class="harry-timeline-club">La Cámara<br>Secreta</span>
+        </button>
+        <button class="harry-timeline-item" id="tab-harry-1994" type="button" role="tab" aria-selected="false" aria-controls="harry-milestone-panel" tabindex="-1" data-year="1994">
+          <span class="harry-timeline-year">1994</span>
+          <span class="harry-timeline-dot"></span>
+          <span class="harry-timeline-club">El Torneo<br>Mágico</span>
+        </button>
+        <button class="harry-timeline-item" id="tab-harry-1998" type="button" role="tab" aria-selected="false" aria-controls="harry-milestone-panel" tabindex="-1" data-year="1998">
+          <span class="harry-timeline-year">1998</span>
+          <span class="harry-timeline-dot"></span>
+          <span class="harry-timeline-club">Batalla de<br>Hogwarts</span>
+        </button>
+      </div>
+      <div class="harry-journey-detail" id="harry-milestone-panel" role="tabpanel" aria-labelledby="tab-harry-1991" tabindex="0">
+        <span class="harry-detail-number">01</span>
+        <div>
+          <p class="harry-detail-label">El origen</p>
+          <h3 id="harry-milestone-title">Eres un mago, Harry</h3>
+          <p id="harry-milestone-copy">En su undécimo cumpleaños, descubrió la verdad sobre su identidad. Subió al Expreso de Hogwarts y encontró en Gryffindor la familia que nunca tuvo.</p>
+        </div>
+        <span class="harry-detail-arrow" aria-hidden="true">↗</span>
+      </div>
+    </section>
+
+    <section class="numbers" id="numeros" aria-labelledby="numbers-title">
+      <div class="section-shell">
+        <div class="section-kicker light">02 <span></span> Magia en cifras</div>
+        <div class="numbers-heading">
+          <h2 id="numbers-title">Más allá del<br><span class="accent">mito.</span></h2>
+          <p>Los logros que definieron su leyenda en la historia de la comunidad mágica británica.</p>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card"><strong>1</strong><span>El Único<br>Elegido</span><small>El niño que<br>sobrevivió</small></article>
+          <article class="stat-card"><strong>7</strong><span>Horrocruxes<br>Destruidos</span><small>Junto a Ron<br>y Hermione</small></article>
+          <article class="stat-card"><strong>3</strong><span>Reliquias<br>de la Muerte</span><small>Poseedor del<br>símbolo</small></article>
+          <article class="stat-card"><strong>150</strong><span>Puntos<br>Snitch</span><small>Buscador estrella<br>de Gryffindor</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section-shell" id="galeria" aria-labelledby="gallery-title">
+      <div class="gallery-heading">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> Pensadero Visual</p>
+          <h2 id="gallery-title">Recuerdos que<br><span class="accent">permanecen.</span></h2>
+        </div>
+        <p>Retazos visuales de un viaje que cambió para siempre el Mundo Mágico.</p>
+      </div>
+      <div class="harry-gallery-grid">
+        <figure class="harry-gallery-card harry-gallery-card-large">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Daniel_Radcliffe%2C_Emma_Watson_%26_Rupert_Grint_colour.jpg" alt="Daniel Radcliffe, Emma Watson y Rupert Grint, el Trío de Oro" loading="lazy">
+          <figcaption><span>01</span><strong>El Trío de Oro</strong><small>Amistad inquebrantable</small></figcaption>
+        </figure>
+        <figure class="harry-gallery-card harry-gallery-card-wide">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/GWR_%27Hall%27_5972_%27Olton_Hall%27_at_Doncaster_Works.JPG" alt="El tren que representa el Expreso de Hogwarts" loading="lazy">
+          <figcaption><span>02</span><strong>El Expreso de Hogwarts</strong><small>Andén 9 ¾</small></figcaption>
+        </figure>
+      </div>
+      <p class="credits">Imágenes: Wikimedia Commons</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="brand-mark">HP<span>⚡</span></span>
+    <p>Una historia. Una cicatriz.<br><strong>Un legado mágico.</strong></p>
+    <div class="harry-footer-links">
+      <a href="index.html">CR7</a>
+      <a href="messi.html">Messi</a>
+      <a href="bellingham.html">Bellingham</a>
+      <a href="#inicio" class="back-top">Volver arriba ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
